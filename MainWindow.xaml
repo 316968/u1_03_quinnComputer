@@ -1,0 +1,63 @@
+<Window x:Class="u1_03_quinnComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_03_quinnComputer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="729.888" Width="1104.882">
+    <Grid Margin="10,10,2,205">
+        <Label x:Name="quinnComputerTitle"
+               Content="Quinn's Computer"
+               HorizontalAlignment="Center" Margin="503,-18,451,432" Width="131"/>
+        <TextBlock x:Name="cpulinkblock" Margin="460,387,389,62" FontSize="25" Visibility="Visible">
+            <Hyperlink x:Name="Link1"
+                       RequestNavigate="Link1_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9877540&amp;CatId=11862">Link to the product</Hyperlink>
+        </TextBlock>
+        
+        <Image x:Name="CPU"
+               Source="http://cdn.idealo.com/folder/Product/4810/7/4810790/s1_produktbild_mid/intel-core-i7-6700k.jpg" 
+               Margin="486,75,417,210"/>
+        <Button x:Name="buttonNextMboard" FontSize="40"
+                Content="Next" Margin="976,414,0,-4"
+                Visibility="Visible" Click="buttonNextMboard_Click"/>
+        <Button x:Name="btnPreviousCPU" FontSize="40"
+                Content="Previous" Margin="0,416,912,-4"
+                Click="btnPreviousCPU_Click"
+                Visibility="Visible"/>
+        <Button x:Name="btnPreviousMboard" FontSize="40"
+                Content="Previous" Margin="0,416,912,-4"
+                Click="btnPreviousMboard_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnNextRam" FontSize="40"
+                Content="Next" Margin="976,414,0,-4"
+                Click="btnNextRam_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnPreviousRam" FontSize="40"
+                Content="Previous" Margin="0,416,912,-4"
+                Click="btnPreviousRam_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnNextStorage" FontSize="40"
+                Content="Next" Margin="976,414,0,-4"
+                Click="btnNextStorage_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnPreviousStorage" FontSize="40"
+                Content="Previous" Margin="0,416,912,-4"
+                Click="btnPreviousStorage_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnNextCase" FontSize="40"
+                Content="Next" Margin="0,416,912,-4"
+                Click="btnNextCase_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnPreviousCase" FontSize="40"
+                Content="Previous" Margin="0,416,912,-4"
+                Click="btnPreviousCase_Click"
+                Visibility="Hidden"/>
+        <Button x:Name="btnNextPower" FontSize="40"
+                Content="Next" Margin="0,416,912,-4"
+                Click="btnNextPower_Click"
+                Visibility="Hidden"/>
+
+    </Grid>
+</Window>

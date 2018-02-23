@@ -5,27 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:u1_03_quinnComputer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="729.888" Width="1104.882">
+        Title="Quinn's Computer" Height="729.888" Width="1104.882">
     <Grid Margin="10,10,2,205">
-        <Label x:Name="quinnComputerTitle"
+        <Label x:Name="quinnComputerTitle" FontSize ="25"
                Content="Quinn's Computer"
-               HorizontalAlignment="Center" Margin="503,-18,451,432" Width="131"/>
-        <TextBlock x:Name="cpulinkblock" Margin="460,387,389,62" FontSize="25" Visibility="Visible">
+               HorizontalAlignment="Left"  Width="215" Margin="0,0,0,417"/>
+        
+        <!--Cost and Name labels-->
+        <Label x:Name="CpuNameCost" Visibility="Visible" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="Intel i7 cpu, it costs $409.99"/>
+
+        <Label x:Name="MboardNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="Asus Atx Motherboard, it costs $156.99"/>
+
+        <Label x:Name="RamNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="Kingston 16GB RAM, it costs $184.99"/>
+
+        <Label x:Name="StorageNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="WD 2TB Hard Drive, it costs $118.99"/>
+
+        <Label x:Name="CaseNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="Thermaltake Full Tower extended ATX, it costs $189.79"/>
+
+        <Label x:Name="PowerNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
+               Content="Corsair 750 Watt Power supply, it costs $177.99"/>
+        <!--All the links-->
+        <TextBlock x:Name="cpulinkblock" Margin="460,387,389,62" FontSize="25" Visibility="Visible" HorizontalAlignment="Center">
             <Hyperlink x:Name="Link1"
                        RequestNavigate="Link1_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9877540&amp;CatId=11862">Link to the product</Hyperlink>
         </TextBlock>
+        <TextBlock x:Name="LinkMboard" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+            <Hyperlink x:Name="Link2"
+                       RequestNavigate="Link2_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9942539&amp;Sku=AS0-300806629">Link to the product</Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="LinkRam" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+            <Hyperlink x:Name="Link3"
+                       RequestNavigate="Link3_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=2944384&amp;Sku=YYI2-93473R">Link to the product</Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="LinkStorage" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+            <Hyperlink x:Name="Link4"
+                       RequestNavigate="Link4_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=3577731&amp;Sku=YYI2-53173S">Link to the product</Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="LinkCase" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+            <Hyperlink x:Name="Link5"
+                       RequestNavigate="Link5_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=8969367&amp;Sku=TML-300636288">Link to the product</Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="LinkPower" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+            <Hyperlink x:Name="Link6"
+                       RequestNavigate="Link6_RequestNavigate"
+                       NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9953408&amp;Sku=CQR-300807317">Link to the product</Hyperlink>
+"
+        </TextBlock>
         
+        <!--Cpu image-->           
         <Image x:Name="CPU"
                Source="http://cdn.idealo.com/folder/Product/4810/7/4810790/s1_produktbild_mid/intel-core-i7-6700k.jpg" 
                Margin="486,75,417,210"/>
+       
+        <!--All the buttons-->
         <Button x:Name="buttonNextMboard" FontSize="40"
                 Content="Next" Margin="976,414,0,-4"
                 Visibility="Visible" Click="buttonNextMboard_Click"/>
         <Button x:Name="btnPreviousCPU" FontSize="40"
                 Content="Previous" Margin="0,416,912,-4"
                 Click="btnPreviousCPU_Click"
-                Visibility="Visible"/>
+                Visibility="Hidden"/>
         <Button x:Name="btnPreviousMboard" FontSize="40"
                 Content="Previous" Margin="0,416,912,-4"
                 Click="btnPreviousMboard_Click"
@@ -47,7 +96,7 @@
                 Click="btnPreviousStorage_Click"
                 Visibility="Hidden"/>
         <Button x:Name="btnNextCase" FontSize="40"
-                Content="Next" Margin="0,416,912,-4"
+                Content="Next" Margin="976,414,0,-4"
                 Click="btnNextCase_Click"
                 Visibility="Hidden"/>
         <Button x:Name="btnPreviousCase" FontSize="40"
@@ -55,7 +104,7 @@
                 Click="btnPreviousCase_Click"
                 Visibility="Hidden"/>
         <Button x:Name="btnNextPower" FontSize="40"
-                Content="Next" Margin="0,416,912,-4"
+                Content="Next" Margin="976,414,0,-4"
                 Click="btnNextPower_Click"
                 Visibility="Hidden"/>
 

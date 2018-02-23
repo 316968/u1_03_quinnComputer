@@ -30,32 +30,32 @@
         <Label x:Name="PowerNameCost" Visibility="Hidden" FontSize="20" HorizontalAlignment="Center" Margin="434,0,389.4,417"
                Content="Corsair 750 Watt Power supply, it costs $177.99"/>
         <!--All the links-->
-        <TextBlock x:Name="cpulinkblock" Margin="460,387,389,62" FontSize="25" Visibility="Visible" HorizontalAlignment="Center">
+        <TextBlock x:Name="cpulinkblock" Margin="472,416,402,33" FontSize="25" Visibility="Visible" HorizontalAlignment="Center">
             <Hyperlink x:Name="Link1"
                        RequestNavigate="Link1_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9877540&amp;CatId=11862">Link to the product</Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="LinkMboard" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+        <TextBlock x:Name="LinkMboard" Margin="472,416,402,33" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
             <Hyperlink x:Name="Link2"
                        RequestNavigate="Link2_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9942539&amp;Sku=AS0-300806629">Link to the product</Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="LinkRam" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+        <TextBlock x:Name="LinkRam" Margin="472,416,402,33" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
             <Hyperlink x:Name="Link3"
                        RequestNavigate="Link3_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=2944384&amp;Sku=YYI2-93473R">Link to the product</Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="LinkStorage" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+        <TextBlock x:Name="LinkStorage" Margin="472,416,402,33" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
             <Hyperlink x:Name="Link4"
                        RequestNavigate="Link4_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=3577731&amp;Sku=YYI2-53173S">Link to the product</Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="LinkCase" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+        <TextBlock x:Name="LinkCase" Margin="472,416,402,33" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
             <Hyperlink x:Name="Link5"
                        RequestNavigate="Link5_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=8969367&amp;Sku=TML-300636288">Link to the product</Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="LinkPower" Margin="460,387,389,62" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
+        <TextBlock x:Name="LinkPower" Margin="472,416,402,33" FontSize="25" HorizontalAlignment="Center" Visibility="Hidden">
             <Hyperlink x:Name="Link6"
                        RequestNavigate="Link6_RequestNavigate"
                        NavigateUri="http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=9953408&amp;Sku=CQR-300807317">Link to the product</Hyperlink>
